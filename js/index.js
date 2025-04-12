@@ -33,7 +33,7 @@ function seleccionarMascotaJugador(){
     let sectionSeleccionarMascota = document.getElementById('Seleccionar-mascota');
     sectionSeleccionarMascota.style.display = 'none';
     let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
-    sectionSeleccionarAtaque.style.display = 'block';
+    sectionSeleccionarAtaque.style.display = 'flex';
     let inputHipodoge = document.getElementById('hipodoge');
     let inputCapipepo = document.getElementById('capipepo');
     let inputRatigeya = document.getElementById('ratigueya');
@@ -128,17 +128,25 @@ function seleccionarMascotaJugador(){
   }
 
   function crearMensaje(resultado) {
-    let parrafo = document.createElement('p');
-    let mensaje = document.getElementById('mensajes')
-    parrafo.innerHTML = 'Tu mascota atacó con '+ ataqueJugador + ', la mascota del enemigo atacó con ' + ataqueEnemigo + ' - ' + resultado;
-    mensaje.appendChild(parrafo);
+    let mensaje = document.getElementById('resultado')
+    let ataquesDelJugador = document.getElementById('ataques-del-jugador')
+    let ataquesDelEnemigo = document.getElementById('ataques-del-enemigo')
+    
+    let nuevoAtaqueDelJugador = document.createElement('p');
+    let nuevoAtaqueDelEnemigo = document.createElement('p');
+
+    mensaje.innerHTML = resultado;
+    nuevoAtaqueDelJugador.innerHTML = ataqueJugador;
+    nuevoAtaqueDelEnemigo.innerHTML = ataqueEnemigo;
+    
+    
+    ataquesDelJugador.appendChild(nuevoAtaqueDelJugador);    
+    ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo);  
 }
 function crearMensajeFinal(resultadoFinal) {
-    let parrafo = document.createElement('p');
-    let mensaje = document.getElementById('mensajes')
-    parrafo.innerHTML = resultadoFinal;
-    mensaje.appendChild(parrafo);
-
+    let mensaje = document.getElementById('resultado')
+    mensaje.innerHTML = resultadoFinal;
+    
     let botonFuego = document.getElementById('boton-fuego')
     let botonAgua = document.getElementById('boton-agua')
     let botonTierra = document.getElementById('boton-tierra')
@@ -147,7 +155,7 @@ function crearMensajeFinal(resultadoFinal) {
     botonAgua.disabled = true;
     botonTierra.disabled = true;
     let sectionSeleccionarReiniciar = document.getElementById('reiniciar');
-    sectionSeleccionarReiniciar.style.display = 'block';
+    sectionSeleccionarReiniciar.style.display = 'flex';
 }
 
 

@@ -1,8 +1,8 @@
-.titulo {
-    color:hotpink;
-    width: 310px;
-    height: 50px;
-    background-color: teal;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Fredoka", sans-serif;
+    background-color: #B0578D;
 }
 
 #Seleccionar-mascota {
@@ -12,4 +12,94 @@
     align-items: center;
     
 }
+.titulo {
+    color: #FFF6F6;
+    font-size: 32px;
+    }
+.subtitulo{
+    color: #FFF6F6;
+    font-size: 24px;
+}
+.tarjetas, .botones-ataque {
+    display: flex;
+        gap: 10px;
+}
+.tarjeta-de-mokepon{
+    color:#610C9F;
+    font-weight: 700;
+    width: 180px;
+    height: 160px;
+    background: #FACBEA;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;    
+    border: 1px solid hotpink;
+    margin: 10px;
+    display: flex;
+}
+.tarjeta-de-mokepon img{
+    width: 80px;
+}
+input{
+    display: none;
+}
+input:checked + label{
+    background-color: #FFE4D6;
+}
+button{
+    font-family: "Poppins", sans-serif;
+    background-color: #D988B9;
+    width: 180px;
+    height: 40px;
+    margin-top: 50px;
+    border: 2px solid pink;
+    border-radius: 30px;
+    color: #FFF6F6
 
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #D988B9;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px; 
+}
+#mensajes {
+        background: #D988B9;
+        width: 280px;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Poppins", sans-serif;
+}
+
+#boton-reiniciar {
+    color:#FFF6F6;
+    font-family: "Poppins", sans-serif;
+}
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+
+}
+.ataque-jugador, .ataque-enemigo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 360px) {
+    .tarjetas, .botones-ataque{
+        flex-direction: column;
+        
+    }
+}

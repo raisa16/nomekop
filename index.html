@@ -13,17 +13,26 @@
         <h1 class="titulo"> Mokepon! 🔥💧🌱</h1>
         <h2 class="subtitulo">Elige tu mascota:</h2>
         <div id="contenedor-tarjetas" class="tarjetas">
-           
-            
+                   
         </div>
 
         <button id="boton-mascota">Seleccionar</button>
+    </section>
+
+    <section id="ver-mapa">
+        <h1 class="titulo">Recorre el mapa con tu mokepon</h1>
+        <canvas id="mapa"></canvas>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverCapipepoDerecha()">></button>        
+        <button onmouseup="detenerMovimiento()" onmousedown="moverCapipepoIzquierda()"> < </button>        
+        <button onmouseup="detenerMovimiento()" onmousedown="moverCapipepoAbajo()">Y</button>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverCapipepoArriba()">^</button>
     </section>
 
     <section id="seleccionar-ataque">
         <h1 class="titulo"> Mokepon! 🔥💧🌱</h1>
         <h2 class="subtitulo">Elige tu ataque:</h2>
 
+        
         <div id="contenedorAtaques" class="botones-ataque">
             
         </div>

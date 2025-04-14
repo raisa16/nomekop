@@ -20,12 +20,15 @@
     </section>
 
     <section id="ver-mapa">
-        <h1 class="titulo">Recorre el mapa con tu mokepon</h1>
+        <h2 class="subtitulo">Recorre el mapa con tu mokepon</h2>
         <canvas id="mapa"></canvas>
-        <button onmouseup="detenerMovimiento()" onmousedown="moverCapipepoDerecha()">></button>        
-        <button onmouseup="detenerMovimiento()" onmousedown="moverCapipepoIzquierda()"> < </button>        
-        <button onmouseup="detenerMovimiento()" onmousedown="moverCapipepoAbajo()">Y</button>
+        
         <button onmouseup="detenerMovimiento()" onmousedown="moverCapipepoArriba()">^</button>
+        <div>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverCapipepoIzquierda()"> < </button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverCapipepoAbajo()">Y</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverCapipepoDerecha()">></button> 
+        </div>
     </section>
 
     <section id="seleccionar-ataque">
@@ -57,6 +60,6 @@
         </div>
         </div>
     </section>
-    <script src="./js/index.js"></script>
+    <script src="./js/mokepon.js"></script>
 </body>
 </html>

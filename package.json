@@ -1,0 +1,24 @@
+{
+  "name": "mokepon",
+  "version": "1.0.0",
+  "description": "mokepon game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raisa16/nomekop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raisa16/nomekop/issues"
+  },
+  "homepage": "https://github.com/raisa16/nomekop#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "corss": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
